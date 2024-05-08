@@ -1,6 +1,7 @@
 #!/bin/bash
 
 log_file="sync.log"
+counter_file=".counter"
 
 # args
 
@@ -34,14 +35,13 @@ setup(){
 
 
 func_counter(){
-    count_file="counter"
-    if [ -f "$count_file" ]; then
-        RUN_COUNT=$(cat "$count_file")
+    if [ -f "$counter_file" ]; then
+        RUN_COUNT=$(cat "$counter_file")
     else
         RUN_COUNT=0
     fi
     RUN_COUNT=$((RUN_COUNT + 1))
-    echo "$RUN_COUNT" > "$count_file"
+    echo "$RUN_COUNT" > "$counter_file"
     echo "$RUN_COUNT"
 }
 
