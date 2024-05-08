@@ -33,3 +33,6 @@ add cron command as you wish
 # cron job that runs every 6 minutes, pushing every 3rd run & logs to file
 */6 * * * * ~/obsidiary/sync.sh master 3 log
 ```
+
+## 
+this will create a hidden `.counter` in order to push every X iterations
