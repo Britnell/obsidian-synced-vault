@@ -1,0 +1,5 @@
+sync.log
+counter
+
+# optionally can ignore '.obsidian' folder if you dont want to sync workspace setup
+# .obsidian/
