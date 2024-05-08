@@ -13,20 +13,20 @@ so i thought its simple enough for a bash script to commit & push regularly
 
 ## instructions
 setup
-1. setup git cli w ssh keys
-2. download repo & open folder as vault in obsidian
-3. test
-4. setup cron job or other
+1. setup git cli w ssh keys 
+2. setup new repo & open folder as vault in obsidian
+3. test script
+4. setup cron job (or other)
 
-## 3. test 
+## 3. test script
 test run script in terminal
 will check for changes & commit
 every 3rd run it will push
 `./sync.sh master 3`
 ( see output or ask [ai](https://huggingface.co/chat/) if it's not working )
 
-## 4. cron
-`crontab -e` to setup cron job
+## 4. cron job
+`crontab -e` to setup cron job. should be done for the user whom has git setup
 add cron command as you wish
 
 ```
