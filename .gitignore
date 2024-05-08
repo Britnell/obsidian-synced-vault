@@ -1,5 +1,9 @@
 sync.log
 .counter
 
-# optionally can ignore '.obsidian' folder if you dont want to sync workspace setup
+
+# this changes a lot as it tracks open tabs etc.
+.obsidian/workspace.json
+
+# optionally can ignore '.obsidian' folder if you dont want to sync app settings
 # .obsidian/
